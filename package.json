@@ -1,0 +1,23 @@
+{
+  "name": "sdb",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Plan 2D d'une piece a partir de photos, avec echelle calibree et simulation de passage d'objets",
+  "scripts": {
+    "dev": "vite",
+    "cert": "sh scripts/dev-cert.sh",
+    "tunnel": "sh scripts/tunnel.sh",
+    "pi": "sh scripts/pi-tunnel.sh",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
