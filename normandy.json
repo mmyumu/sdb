@@ -1,0 +1,5 @@
+{"tests": ["tests.yml"],
+ "components": [
+  {"name": "Docs and tests", "deploy": "none", "paths": ["README.md", "CLAUDE.md", "normandy.json", ".gitignore", ".env.example", ".github/**", "test/**"]},
+  {"name": "App", "deploy": "none", "paths": ["index.html", "package.json", "package-lock.json", "tsconfig.json", "vite.config.ts", "src/**", "server/**", "scripts/**"]}
+ ]}
